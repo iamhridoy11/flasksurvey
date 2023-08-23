@@ -27,7 +27,7 @@ def show_begain():
 def show_question(id):
     question = satisfaction_survey.questions[id]
 
-    return render_template('questions.html', questionNumber=id, question=question)
+    return render_template('questions.html', question=question)
 
 
 @app.route('/answer', methods=["POST"])
